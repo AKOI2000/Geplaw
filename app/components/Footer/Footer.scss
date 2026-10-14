@@ -1,0 +1,65 @@
+@use "../../../styles/mixin" as *;
+@use "../../../styles/variables" as *;
+
+#footer {
+  background-color: $color-secondary;
+  color: $color-primary;
+  @include container;
+  padding-bottom: 0;
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    gap: 1rem;
+
+    @include respond(mds) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .footer-text {
+    max-width: 45rem;
+
+    img {
+      min-height: 9rem;
+      width: auto;
+      // object-fit: contain;
+      aspect-ratio: 4/5;
+    }
+
+    h4 {
+    }
+
+    p {
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      font-weight: 300;
+      color: $color-grey;
+      text-decoration: underline;
+      font-size: $fs-p;
+      &:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid $color-grey;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: $fs-sm;
+    font-weight: 500;
+  }
+}

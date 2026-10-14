@@ -1,0 +1,51 @@
+@use "../../../styles/mixin" as *;
+@use "../../../styles/variables" as *;
+
+#section-expertise {
+  @include container;
+  background: $color-secondary;
+  color: $color-primary;
+
+  .expertise-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+
+    @include respond(mds) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .expertise-item {
+    background: $color-shade;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    @include respond(md) {
+      padding: 3rem 2rem;
+    }
+
+    h4{
+      margin-bottom: .5rem;
+    }
+
+    p{
+      // color: $color-grey;
+      font-weight: 300;
+    }
+
+
+    a {
+      margin-top: auto;
+    }
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: center;
+  }
+}

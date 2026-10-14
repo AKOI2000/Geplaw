@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "variables" as *;
+
+// Scales DOWN for smaller screens (max-width)
+@mixin respond($breakpoint) {
+  @media (max-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// Scales UP for larger screens (min-width)
+@mixin lgrespond($breakpoint) {
+  @media (min-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin container {
+  // max-width: $max-width;
+  margin: auto;
+  padding: $space-16 $space-6;
+
+  @include respond(mds) {
+    padding: $space-8 $space-2;
+  }
+}

@@ -1,0 +1,93 @@
+@use "../../tokens.scss" as *;
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixin" as *;
+
+.hero {
+  position: relative;
+  margin: 0.5rem;
+  height: 105dvh;
+  border-radius: 3rem;
+  color: $color-primary;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem 2rem 5rem;
+
+  @include respond(mds) {
+    margin: 0;
+    border-radius: 0 0 3rem 5rem;
+    padding: 4rem 1rem;
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background-color: rgba($color-secondary, 0.9);
+  }
+
+  img {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    object-fit: cover;
+  }
+
+  &__copy {
+    z-index: 2;
+    max-width: 95rem;
+
+    img {
+      position: relative;
+      z-index: inherit;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    @include respond(mds) {
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+
+  &__lead {
+    color: $color-grey;
+  }
+
+  &__cta-box {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__cta {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border-radius: 999px;
+
+    transition: background 0.2s;
+    text-decoration: none;
+    font-size: $fs-btn;
+    // font-weight: 500;
+    // @include focus-ring;
+
+    &-full {
+      background: $color-primary;
+      color: #1a1a1a;
+
+      &:hover {
+        background: #f6efe3;
+      }
+    }
+
+    &-transparent {
+      background-color: transparent;
+      border: 1px solid $color-primary;
+      color: $color-primary;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@use "../../../styles/mixin" as *;
+@use "../../../styles/variables" as *;
+
+#section-team {
+  @include container;
+
+  .text {
+    max-width: 120rem;
+    // margin: auto;
+    font-size: 8rem;
+    font-weight: 400;
+    margin-bottom: 7rem;
+    letter-spacing: -0.05em;
+  }
+
+  .btn-box {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @include respond(mds) {
+      grid-template-columns: 1fr;
+    }
+
+    .text-box {
+      margin-top: 1rem;
+    }
+
+    .img-box {
+      // aspect-ratio: 4/5;
+      max-height: 60rem;
+      border-radius: 2rem;
+
+      img {
+        aspect-ratio: 4/5;
+        // object-position: top;
+      }
+    }
+  }
+
+  .sub-team {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    @include respond(mdl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(mds) {
+      grid-template-columns: 1fr;
+    }
+
+    .text-box {
+      margin-top: 0.5rem;
+    }
+
+    .img-box {
+      max-height: 50rem;
+      border-radius: 2rem;
+
+      @include respond(mds) {
+        max-height: 75rem;
+      }
+
+      img {
+        height: 100%;
+        aspect-ratio: 4/5;
+        object-position: top;
+      }
+    }
+  }
+
+  .text-box {
+    margin-top: 0.5rem;
+
+    h5 {
+      // margin-bottom: 0.rem;
+    }
+
+    p {
+      color: $color-shade;
+    }
+  }
+}

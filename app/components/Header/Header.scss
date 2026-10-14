@@ -1,0 +1,233 @@
+@use "../../tokens.scss" as *;
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixin" as *;
+
+// Header sits on top of the hero (absolute), so the notch lines up with the hero's top edge.
+.site-header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 3;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    color: $color-primary;
+    text-decoration: none;
+    font-size: $fs-p;
+    letter-spacing: -0.005em;
+    transition: opacity 0.2s;
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 0.4rem;
+      border-radius: 0.4rem;
+    }
+
+    &:hover {
+      opacity: 0.65;
+    }
+
+    @include respond(mds) {
+      font-size: 3rem;
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: $color-primary;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+
+    span {
+      display: block;
+      width: 2.6rem;
+      height: 0.2rem;
+      background: currentColor;
+      border-radius: 1rem;
+      transition:
+        transform 0.3s ease,
+        opacity 0.2s ease;
+    }
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 0.4rem;
+      border-radius: 0.4rem;
+    }
+
+    &--open {
+      span {
+        &:first-child {
+          transform: translateY(0.8rem) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          transform: translateY(-0.8rem) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  // ---- Logo notch: a page-coloured tab cut into the hero's top edge ----
+  &__notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 8.8rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-primary;
+    border-radius: 0 0 2rem 2rem;
+
+    @include respond(mds) {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+      background: transparent;
+      color: $color-primary;
+      width: auto;
+      height: auto;
+      border-radius: 0;
+
+      span {
+        display: none;
+      }
+    }
+
+    // concave flares where the tab meets the hero edge
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: inherit;
+      width: 1.6rem;
+      height: 1.6rem;
+      pointer-events: none;
+
+      @include respond(mds) {
+        position: relative;
+        display: none;
+      }
+    }
+
+    &::before {
+      right: 100%;
+      background: radial-gradient(
+        circle at 0 100%,
+        transparent 15.5px,
+        $color-primary 16px
+      );
+    }
+
+    &::after {
+      left: 100%;
+      background: radial-gradient(
+        circle at 100% 100%,
+        transparent 15.5px,
+        $color-primary 16px
+      );
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+    color: $color-secondary;
+    text-decoration: none;
+    font-family: $serif;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 1;
+    letter-spacing: -0.14em;
+    height: 5rem;
+    width: auto;
+
+    &-img {
+      display: none;
+      justify-self: center;
+      object-fit: contain;
+    }
+
+    &:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 0.4rem;
+      border-radius: 0.4rem;
+    }
+
+    @include respond(mds) {
+      color: $color-primary;
+
+      &-img {
+        display: block;
+      }
+    }
+  }
+
+  @include respond(mds) {
+    &__list {
+      display: none;
+    }
+    &__menu-btn {
+      display: flex;
+      margin-left: auto;
+      margin-left: auto;
+      position: relative;
+      z-index: 4;
+    }
+
+    &--open {
+      height: 100dvh;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      padding: 2.4rem;
+      background: rgba(0, 0, 0, 1);
+      backdrop-filter: blur(0.8rem);
+      // border-radius: $radius $radius 0 0;
+
+      .site-header__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        width: 100%;
+        margin-top: 8rem;
+      }
+      .site-header__menu-btn {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+      }
+    }
+  }
+}

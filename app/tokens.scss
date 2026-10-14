@@ -1,0 +1,24 @@
+// Fonts (add once in index.html):
+// <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) { --page: #141414; --ink: #f1f1f0; }
+}
+:root[data-theme='dark'] { --page: #141414; --ink: #f1f1f0; }
+
+
+$sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+$gap: 16px;
+$radius: 36px;
+$notch-w: 88px;
+$notch-h: 32px;
+$flare: 16px;
+$bp-mobile: 760px;
+
+@mixin mobile { @media (max-width: $bp-mobile) { @content; } }
+
+@mixin focus-ring {
+  &:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 4px; }
+}

@@ -1,0 +1,58 @@
+@use "../../../styles/mixin" as *;
+@use "../../../styles/variables" as *;
+
+#section-insights {
+  @include container;
+
+  .insights-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    @include respond(mds) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(mds) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .insights-item {
+    overflow: hidden;
+
+    .img-box {
+      max-height: 45rem;
+      border-radius: 1.2rem;
+      // overflow: hidden;
+
+      img {
+        // min-height: 30rem;
+      }
+    }
+
+    &-content {
+      margin-top: 1rem;
+      // min-height: 14rem;
+      // display: flex;
+      // flex-direction: column;
+      // padding: 0 .5rem;
+
+      h5 {
+        margin-bottom: 0.2rem;
+      }
+      p {
+        // font-size: $fs-sm;
+        color: $color-shade;
+        // font-weight: 300;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        // margin-top: 1rem;
+        // margin-top: auto;
+      }
+    }
+  }
+}
