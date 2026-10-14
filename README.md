@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GEPLAW
+
+A modern website for GEPLAW, a Nigerian law firm, designed to communicate the firm's experience, legal expertise and commercial approach through a refined digital presence.
+
+## Overview
+
+The website introduces the firm, highlights its areas of expertise, presents its practitioners and shares legal insights relevant to businesses and organisations.
+
+The design combines editorial typography, considered layouts and responsive components to create a professional experience across desktop and mobile devices.
+
+## Features
+
+- Responsive navigation with a mobile menu.
+- Animated introductory cards.
+- Dedicated sections for the firm's expertise, practitioners and achievements.
+- Insights section featuring legal and commercial topics.
+- Responsive layouts for different screen sizes.
+- Reusable components and modular styling.
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **Library:** React
+- **Styling:** Sass / SCSS Modules
+- **Animation:** Framer Motion
+- **Images:** Next.js Image and Unsplash
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Ensure you have Node.js and npm installed.
+
+### Installation
+
+Clone the repository and navigate to the project directory:
+
+```bash
+git clone <repository-url>
+cd geplaw
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The application updates automatically as you edit the source files.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+The project follows the Next.js App Router structure. Key directories include:
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` for routes, pages and application-level styles.
+- `components/` for reusable interface components.
+- `public/` for static assets, including images and logos.
+- `styles/` for shared variables, mixins and styling utilities.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*Adjust these paths if your actual project structure differs.*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+To create a production build:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To run the production build locally:
+
+```bash
+npm run start
+```
+
+To check for linting issues, if the project has a configured lint script:
+
+```bash
+npm run lint
+```
+
+## Deployment
+
+The project can be deployed on [Vercel](https://vercel.com/), which provides a straightforward deployment workflow for Next.js applications.
+
+For additional guidance, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+
+## Project Status
+
+Website development is ongoing.
+
+---
+
+Built with Next.js and React.

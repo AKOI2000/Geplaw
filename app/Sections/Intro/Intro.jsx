@@ -148,29 +148,34 @@ function Intro() {
 
 export default Intro;
 
+
 const introCards = [
   {
     id: 1,
     title: "Four decades of perspective",
     paragraph:
       "Established in 1984, we bring decades of legal experience to the commercial matters entrusted to us.",
-    imgUrl: "/georgeEtomi.jpg",
-    imgAlt: "",
+    imgUrl:
+      "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Legal books and reference materials in a law library",
   },
   {
     id: 2,
     title: "Expertise across industries",
     paragraph:
       "Our practice spans diverse sectors of the Nigerian economy, from energy and financial services to infrastructure and emerging technology.",
-      imgUrl: "/georgeEtomi.jpg",
-    imgAlt: "",
+    imgUrl:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Modern commercial skyscrapers representing business and industry",
   },
   {
     id: 3,
     title: "A commercial approach",
     paragraph:
       "We consider the legal requirements and wider business objectives behind the decisions our clients face.",
-      imgUrl: "/georgeEtomi.jpg",
-    imgAlt: "",
+    imgUrl:
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Business professionals collaborating on commercial decisions",
   },
 ];
+

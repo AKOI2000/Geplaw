@@ -47,63 +47,51 @@ export default Insights;
 
 const insights = [
   {
-    id: 1,
-    title: "Regulatory shifts in the energy sector: what businesses must know",
+    title: "When business partnerships go wrong: protecting your interests",
     excerpt:
-      "Recent regulatory reforms are reshaping energy contracts and project financing — our guide highlights compliance steps and commercial considerations.",
+      "Disagreements between business partners can threaten the future of an otherwise successful venture. We explore the legal safeguards, dispute resolution options and contractual provisions that help protect your interests.",
     imgUrl:
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1200&q=80",
-    imgAlt: "Stack of law books on a shelf",
-    date: "2026-09-20",
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Business professionals discussing a commercial agreement",
   },
   {
-    id: 2,
-    title: "Cross-border M&A: mitigating regulatory risk",
+    title: "Intellectual property: protecting what your business creates",
     excerpt:
-      "Cross-border transactions require careful regulatory mapping. We outline practical steps to reduce antitrust and foreign investment exposure.",
+      "Your brand, ideas and creative work can be among your most valuable assets. Learn how trademarks, copyrights and other intellectual property rights can help protect your work and strengthen your commercial position.",
     imgUrl:
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1200&q=80",
-    imgAlt: "Businesspeople shaking hands over a contract",
-    date: "2026-08-11",
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Person writing notes at a desk",
   },
   {
-    id: 3,
-    title: "Dispute resolution trends: arbitration vs litigation",
+    title: "Commercial disputes: choosing the right path to resolution",
     excerpt:
-      "Choosing the right dispute forum affects timelines, costs and confidentiality. We compare arbitration and litigation for commercial disputes.",
+      "Not every commercial dispute needs to end in court. We examine the options available to businesses, from negotiation and mediation to arbitration and litigation, and the factors that should guide your decision.",
     imgUrl:
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1200&q=80",
-    imgAlt: "Empty courtroom with wooden benches",
-    date: "2026-07-02",
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Law books and legal reference materials",
   },
   {
-    id: 4,
-    title: "Contract drafting: avoiding common commercial pitfalls",
+    title: "Employment contracts: the clauses employers should not overlook",
     excerpt:
-      "Well-drafted contracts reduce future disputes. We share drafting tips that protect commercial outcomes and manage liability.",
+      "A clear employment contract establishes expectations before problems arise. We highlight important provisions covering responsibilities, remuneration, confidentiality, termination and the protection of business interests.",
     imgUrl:
-      "https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?auto=format&fit=crop&w=1200&q=80",
-    imgAlt: "Close-up of a gavel and legal documents",
-    date: "2026-06-15",
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Colleagues collaborating during a workplace meeting",
   },
   {
-    id: 5,
-    title: "Data protection in transactions: key clauses to include",
+    title: "Real estate transactions: conducting due diligence before you buy",
     excerpt:
-      "With increased data regulation, transactional documents must address data transfers, security and breach response. Here’s a checklist.",
+      "A promising property is only as secure as its underlying title and documentation. Discover why title verification, ownership checks, searches and proper transaction documents are essential before committing to a purchase.",
     imgUrl:
-      "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1200&q=80",
-    imgAlt: "Person reviewing a contract on a laptop",
-    date: "2026-05-10",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Modern residential property viewed from the exterior",
   },
   {
-    id: 6,
-    title: "Corporate governance: strengthening board oversight",
+    title: "Data protection and business risk: building compliance into operations",
     excerpt:
-      "Good governance supports resilience and investor confidence. We outline board practices for modern corporate oversight.",
+      "How a business collects, stores and uses personal information carries legal and reputational consequences. We consider practical measures for managing data responsibly, reviewing internal processes and reducing compliance risks.",
     imgUrl:
-      "https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=1200&q=80",
-    imgAlt: "Corporate team meeting in a boardroom",
-    date: "2026-04-01",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    imgAlt: "Person working on a laptop in a modern workspace",
   },
 ];
