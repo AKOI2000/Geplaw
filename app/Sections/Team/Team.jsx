@@ -78,7 +78,7 @@ const team = [
     id: 0,
     name: "Abieyuwa Igbinovia",
     role: "Managing Partner",
-    imgUrl: "/abieyuwaIgbinovia.jpg",
+    imgUrl: "/abieyuwaIGbinoviaa.jpg",
   },
   {
     id: 1,
