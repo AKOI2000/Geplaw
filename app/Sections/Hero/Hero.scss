@@ -17,7 +17,7 @@
   @include respond(mds) {
     margin: 0;
     border-radius: 0 0 3rem 5rem;
-    padding: 4rem 1rem;
+    padding: 4rem 1rem 7rem;
   }
 
   .overlay {
@@ -37,6 +37,15 @@
   &__copy {
     z-index: 2;
     max-width: 95rem;
+
+    .eyebrow{
+      color: #b1976b;
+      font-size: $fs-sm;
+      margin-bottom: 1rem;
+      letter-spacing: 0.03em;
+
+    }
+
 
     img {
       position: relative;
@@ -62,6 +71,8 @@
     display: flex;
     gap: 2rem;
     align-items: center;
+
+    
   }
 
   &__cta {

@@ -34,7 +34,9 @@ function Insights() {
               <h5>{insight.title}</h5>
               <p>{insight.excerpt}</p>
 
-              <a href="" className="link black">Read More</a>
+              <a href="" className="link black">
+                Read More
+              </a>
             </div>
           </div>
         ))}
@@ -47,6 +49,7 @@ export default Insights;
 
 const insights = [
   {
+    id: 1,
     title: "When business partnerships go wrong: protecting your interests",
     excerpt:
       "Disagreements between business partners can threaten the future of an otherwise successful venture. We explore the legal safeguards, dispute resolution options and contractual provisions that help protect your interests.",
@@ -55,6 +58,8 @@ const insights = [
     imgAlt: "Business professionals discussing a commercial agreement",
   },
   {
+    id: 2,
+
     title: "Intellectual property: protecting what your business creates",
     excerpt:
       "Your brand, ideas and creative work can be among your most valuable assets. Learn how trademarks, copyrights and other intellectual property rights can help protect your work and strengthen your commercial position.",
@@ -63,6 +68,8 @@ const insights = [
     imgAlt: "Person writing notes at a desk",
   },
   {
+    id: 3,
+
     title: "Commercial disputes: choosing the right path to resolution",
     excerpt:
       "Not every commercial dispute needs to end in court. We examine the options available to businesses, from negotiation and mediation to arbitration and litigation, and the factors that should guide your decision.",
@@ -71,6 +78,8 @@ const insights = [
     imgAlt: "Law books and legal reference materials",
   },
   {
+    id: 4,
+
     title: "Employment contracts: the clauses employers should not overlook",
     excerpt:
       "A clear employment contract establishes expectations before problems arise. We highlight important provisions covering responsibilities, remuneration, confidentiality, termination and the protection of business interests.",
@@ -79,6 +88,8 @@ const insights = [
     imgAlt: "Colleagues collaborating during a workplace meeting",
   },
   {
+    id: 5,
+
     title: "Real estate transactions: conducting due diligence before you buy",
     excerpt:
       "A promising property is only as secure as its underlying title and documentation. Discover why title verification, ownership checks, searches and proper transaction documents are essential before committing to a purchase.",
@@ -87,7 +98,10 @@ const insights = [
     imgAlt: "Modern residential property viewed from the exterior",
   },
   {
-    title: "Data protection and business risk: building compliance into operations",
+    id: 6,
+
+    title:
+      "Data protection and business risk: building compliance into operations",
     excerpt:
       "How a business collects, stores and uses personal information carries legal and reputational consequences. We consider practical measures for managing data responsibly, reviewing internal processes and reducing compliance risks.",
     imgUrl:

@@ -17,6 +17,7 @@ export default function Hero() {
           height={80}
           width={68}
         />
+        {/* <h6 className="eyebrow">GEORGE ETOMI AND PARTNERS</h6> */}
         <h1 className="hero__title">
           Behind every major business decision, <br /> there is a legal one.
         </h1>
@@ -27,10 +28,10 @@ export default function Hero() {
         </p>
         <div className="hero__cta-box">
           <a className="hero__cta hero__cta-full" href="">
-            Explore Our Expertise
+            Speak With Our Team
           </a>
           <a href="" className="hero__cta hero__cta-transparent">
-            Speak With Our Team
+            Explore Our Expertise
           </a>
         </div>
       </div>
