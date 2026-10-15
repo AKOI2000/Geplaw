@@ -11,13 +11,13 @@ export default function Hero() {
       <div className="overlay"></div>
 
       <div className="hero__copy">
-        <Image
+        {/* <Image
           src={"/logo.jpg"}
           alt=""
           height={80}
           width={68}
-        />
-        {/* <h6 className="eyebrow">GEORGE ETOMI AND PARTNERS</h6> */}
+        /> */}
+        <h6 className="eyebrow">GEORGE ETOMI AND PARTNERS</h6>
         <h1 className="hero__title">
           Behind every major business decision, <br /> there is a legal one.
         </h1>
